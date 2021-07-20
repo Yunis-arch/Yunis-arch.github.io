@@ -1,0 +1,103 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+
+
+
+@font-face {
+   font-family: 'Leto Sans';
+   font-weight: 400;
+   src: local('Leto Sans Bold'), local('Leto-Sans-Bold'),
+         url('../fonts/LetoSans-Bold.woff2') format('woff2'),
+         url('../fonts/LetoSans-Bold.woff') format('woff'),
+         url('../fonts/LetoSans-Bold.ttf') format('truetype');
+}
+
+
+
+body{
+   font-family: 'Leto Sans';
+   font-weight: 600;
+   font-size: 40px;
+   color: rgb(39, 41, 119);
+}
+.wrapper {
+   max-width: 1400px;
+   margin: 0 auto;
+   padding: 20px 20px 20px;
+   position: relative;
+   z-index: 2;
+}
+.wrapper__background-img{
+   z-index: 1;
+   position: absolute;
+   top: 20px;
+   left: 20px;
+}
+.header {
+   background: url('../img/line.png') no-repeat 0 0 /100% 120px;
+}
+.header__flex {
+   display: flex;
+   justify-content: space-between;
+}
+.header__product-img{
+   margin-top: -5px;
+}
+.header__product-img img{
+   width: 600px;
+   padding-left: 60px;
+}
+.header__logo{
+   margin-top: 35px;
+}
+.header__logo img{
+   padding-right: 70px;
+   max-width: 300px;
+}
+.main__images {
+   margin-top: 30px;
+}
+.main__images-img{
+   width: 500px;
+   display: block;
+   margin: 0 auto;
+}
+.main__text {
+   line-height: 43px;
+}
+.list li{
+   background: url('../img/icon.svg') no-repeat 0 10px/25px auto;
+   padding-left: 40px;
+   margin-bottom: 20px;
+}
